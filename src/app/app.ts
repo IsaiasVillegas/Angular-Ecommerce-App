@@ -1,0 +1,18 @@
+import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Header } from './layout/header/header';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, Header],
+  template: `
+    <app-header class="relative z-10" />
+    <div class="h-[calc(100vh-64px)] overflow-y-auto">
+      <router-outlet />
+    </div>
+  `,
+  styles: [],
+})
+export class App {
+  protected readonly title = signal('ng-ecommerce');
+}
