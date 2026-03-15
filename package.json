@@ -8,6 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "assets": [
+    "src/_redirects"
+  ],
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
